@@ -160,10 +160,12 @@ async function sendEmails() {
 }
 
 // ✅ Schedule to run every day at 5:22 AM IST
-cron.schedule('30 4 * * *', () => {
-  console.log(`⏰ Email job started at ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
-  sendEmails();
-});
+// cron.schedule('30 4 * * *', () => {
+//   console.log(`⏰ Email job started at ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
+//   sendEmails();
+// });
+
+sendEmails();
 
 
 // ✅ Optional: Uncomment below to test manually right now
