@@ -160,7 +160,7 @@ async function sendEmails() {
 }
 
 // ✅ Schedule to run every day at 5:22 AM IST
-cron.schedule('00 10 * * *', () => {
+cron.schedule('30 4 * * *', () => {
   console.log(`⏰ Email job started at ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
   sendEmails();
 });
